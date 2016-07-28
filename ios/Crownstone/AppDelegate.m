@@ -11,7 +11,7 @@
 
 #import "RCTRootView.h"
 #import "RCTSplashScreen.h"
-#import "Crownstone-Swift.h"
+#import <CS_Demo-Swift.h>
 
 
 @implementation AppDelegate

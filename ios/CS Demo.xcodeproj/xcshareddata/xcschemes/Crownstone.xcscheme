@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "Crownstone.app"
-               BlueprintName = "Crownstone"
-               ReferencedContainer = "container:Crownstone.xcodeproj">
+               BuildableName = "Crownstone Demo.app"
+               BlueprintName = "CS Demo"
+               ReferencedContainer = "container:CS Demo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "CrownstoneTests.xctest"
-               BlueprintName = "CrownstoneTests"
-               ReferencedContainer = "container:Crownstone.xcodeproj">
+               BuildableName = "CS Demo.xctest"
+               BlueprintName = "CS DemoTests"
+               ReferencedContainer = "container:CS Demo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "CrownstoneTests.xctest"
-               BlueprintName = "CrownstoneTests"
-               ReferencedContainer = "container:Crownstone.xcodeproj">
+               BuildableName = "CS Demo.xctest"
+               BlueprintName = "CS DemoTests"
+               ReferencedContainer = "container:CS Demo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Crownstone.app"
-            BlueprintName = "Crownstone"
-            ReferencedContainer = "container:Crownstone.xcodeproj">
+            BuildableName = "Crownstone Demo.app"
+            BlueprintName = "CS Demo"
+            ReferencedContainer = "container:CS Demo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Crownstone.app"
-            BlueprintName = "Crownstone"
-            ReferencedContainer = "container:Crownstone.xcodeproj">
+            BuildableName = "Crownstone Demo.app"
+            BlueprintName = "CS Demo"
+            ReferencedContainer = "container:CS Demo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -99,9 +99,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Crownstone.app"
-            BlueprintName = "Crownstone"
-            ReferencedContainer = "container:Crownstone.xcodeproj">
+            BuildableName = "Crownstone Demo.app"
+            BlueprintName = "CS Demo"
+            ReferencedContainer = "container:CS Demo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

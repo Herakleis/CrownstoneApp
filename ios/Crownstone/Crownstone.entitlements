@@ -4,7 +4,7 @@
 <dict>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.crownstone.crownstone</string>
+		<string>group.crownstone.Crownstone</string>
 	</array>
 </dict>
 </plist>
