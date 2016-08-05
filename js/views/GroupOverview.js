@@ -93,12 +93,12 @@ export class GroupOverview extends Component {
       let presentUsers = getPresentUsersFromState(state, this.activeGroup, locationId);
       //console.log("users in area",presentUsers)
       presentUsers.forEach((user) => {
-        if (this.state.presentUsers[user.id] === undefined) {
-          this.state.presentUsers[user.id] = {location: locationId, data:user.data};
+        if (this.presentUsers[user.id] === undefined) {
+          this.presentUsers[user.id] = {location: locationId, data:user.data};
           this._moveUser(user.id, locationId, false);
         }
 
-        if (this.state.presentUsers[user.id].location !== locationId) {
+        if (this.presentUsers[user.id].location !== locationId) {
           this._moveUser(user.id, locationId, true);
         }
       });
@@ -149,15 +149,15 @@ export class GroupOverview extends Component {
     let topPos = corner.y + (roomHalfDiag - this.roomRadius - userHalfDiag);
     let leftPos = corner.x + (roomHalfDiag - this.roomRadius- userHalfDiag);
 
-    this.state.presentUsers[userId].location = locationId;
+    this.presentUsers[userId].location = locationId;
 
     if (animate === false) {
-      this.state.presentUsers[userId].top = new Animated.Value(topPos);
-      this.state.presentUsers[userId].left = new Animated.Value(leftPos);
+      this.presentUsers[userId].top = new Animated.Value(topPos);
+      this.presentUsers[userId].left = new Animated.Value(leftPos);
     }
     else {
-      Animated.spring(this.state.presentUsers[userId].top, {toValue: topPos, tension: 50, friction: 6}).start();
-      Animated.spring(this.state.presentUsers[userId].left, {toValue: leftPos, tension: 50, friction: 6}).start();
+      Animated.spring(this.presentUsers[userId].top, {toValue: topPos, tension: 50, friction: 6}).start();
+      Animated.spring(this.presentUsers[userId].left, {toValue: leftPos, tension: 50, friction: 6}).start();
     }
   }
 
@@ -198,11 +198,11 @@ export class GroupOverview extends Component {
 
   drawUsers() {
     let userObjects = [];
-    let users = Object.keys(this.state.presentUsers);
+    let users = Object.keys(this.presentUsers);
     users.forEach((userId) => {
       userObjects.push(
-        <Animated.View key={userId} style={{position:'absolute', top:this.state.presentUsers[userId].top, left:this.state.presentUsers[userId].left}}>
-          <ProfilePicture picture={this.state.presentUsers[userId].data.picture} size={2*this.userRadius} />
+        <Animated.View key={userId} style={{position:'absolute', top:this.presentUsers[userId].top, left:this.presentUsers[userId].left}}>
+          <ProfilePicture picture={this.presentUsers[userId].data.picture} size={2*this.userRadius} />
         </Animated.View>
       )
     });
