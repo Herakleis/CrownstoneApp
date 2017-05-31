@@ -1,7 +1,7 @@
 import * as React from 'react'; import { Component } from 'react';
 import {
   Alert,
-  
+  Animated,
   Dimensions,
   TouchableHighlight,
   PixelRatio,
@@ -16,18 +16,38 @@ import {
 import { Background } from './../components/Background'
 const Actions = require('react-native-router-flux').Actions;
 import loginStyles from './LoginStyles'
-import { styles, colors } from './../styles'
-
+// let Animation = require('lottie-react-native');
 
 export class RegisterConclusion extends Component<any, any> {
-  constructor() {
-    super();
+  animation : any;
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      progress: new Animated.Value(0),
+      progress2: new Animated.Value(0),
+    };
   }
+
+  // componentDidMount() {
+  //   this.animation.play();
+  // }
 
   render() {
     return (
       <Background hideInterface={true} image={this.props.backgrounds.mainDark}>
         <View style={{flex:1}} />
+        {/*<View style={{flex:1, justifyContent:'center', alignItems:'center', position:'relative', left:15, top:120}} >*/}
+          {/*<Animation*/}
+            {/*ref={animation => { this.animation = animation; }}*/}
+            {/*style={{*/}
+              {/*width: 400,*/}
+              {/*height: 400,*/}
+            {/*}}*/}
+            {/*loop={true}*/}
+            {/*source={require('../../animations/crownstoneAnimatedLogo.json')}*/}
+          {/*/>*/}
+        {/*</View>*/}
         <View style={style.viewContainer}>
           <Text style={style.text}>An email has been sent to:</Text>
         </View>
